@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alef&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Alef", sans-serif;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Orbitron", sans-serif;
+}
+p {
+  font-family: "Alef", sans-serif;
+  font-size: 1.2em;
+  text-indent: 1em;
+  word-wrap: break-word;
+  letter-spacing: 0.2px;
+  color: black;
+}
+.topbar {
+  display: flex;
+  color: #fff;
+  height: 12vh;
+  box-sizing: border-box;
+  background-color: rgb(40, 43, 43);
+  box-shadow: 2px 2px 2px 1px grey;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.place {
+  display: none;
+}
+.topP {
+  display: inline-block;
+  margin-left: 15px;
+}
+.topright {
+  margin-right: 15px;
+
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+#about {
+  height: 200px;
+  width: 90%;
+  color: #fff;
+  margin: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+  padding-left: 5%;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1c3cc;
+  background-position: 0px 0px, 50% 0%;
+  background-size: auto, cover;
+  background-image: linear-gradient(
+      76deg,
+      rgba(193, 195, 204, 0.83) 35%,
+      rgba(193, 195, 204, 0.28) 65%
+    ),
+    url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mzh8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+}
+
+#about > h1 {
+  font-size: 10vw;
+  font-family: "Big Shoulders Stencil Display", cursive;
+}
+.logo {
+  padding: 2%;
+  margin-right: 5%;
+  border-radius: 10px;
+}
+.bottom {
+  margin-top: 3em;
+  height: 15vh;
+  justify-items: center;
+  align-items: center;
+
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+#services {
+  position: relative;
+  height: 10vw;
+  padding-right: 5%;
+  padding-left: 5%;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1c3cc;
+  background-position: 0px 0px, 20% 0%;
+  background-size: auto, cover;
+  background-image: linear-gradient(
+      76deg,
+      rgba(193, 195, 204, 0.83) 35%,
+      rgba(193, 195, 204, 0.28) 65%
+    ),
+    url("https://cdn.mwallpapers.com/photos/celebrities/hd-wallpapers/education-workplace-office-android-iphone-hd-wallpaper-background-downloadhd-wallpapers-desktop-background-android-iphone-1080p-4k-bygpo.jpg");
+}
+#abc {
+  margin-top: 1.5em;
+  height: 50vw;
+}
+button {
+  width: 100%;
+  justify-items: center;
+}
+section {
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.menubar {
+  padding: 15px;
+  z-index: 99;
+  opacity: 1;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(117, 114, 114);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.menubar .change {
+  display: block;
+  background: #fff;
+  width: 75vh;
+  opacity: 0.9;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+.place .change {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  opacity: 1;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid black;
+}
+.wrapper {
+  position: relative;
+  left: 0%;
+  transform: translate(40%, 30%);
+}
+
+.link_wrapper {
+  position: relative;
+}
+
+a {
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all 0.35s;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 0;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.icon svg {
+  width: 30px;
+  position: relative;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all 0.35s;
+}
+
+a:hover {
+  width: 200px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+a:hover + .icon {
+  border: 3px solid #2ecc71;
+  right: -25%;
+}
+
+.flex-wrapper {
+  background-color: #8b008b;
+  display: flex;
+  opacity: 0.89;
+  width: 90%;
+  margin-inline: auto;
+}
+.fa-book-reader {
+  font-size: 5em;
+  color: #fff;
+}
+.fontawe {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.fontawe > img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.flex-div {
+  margin: 2%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  border-radius: 10px;
+  align-items: center;
+  justify-items: center;
+  border: 2px solid;
+  justify-content: space-around;
+}
+.flex-div > h3 {
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+}
+.flex-div > ul > li {
+  padding-top: 0;
+  margin-top: 0;
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .topbar {
+    height: 18vh;
+  }
+  .topP {
+    display: block;
+  }
+  .flex-wrapper {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .flex-div {
+    max-width: 80%;
+    margin-inline: auto;
+  }
+}
